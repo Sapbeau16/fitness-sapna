@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('logo.jpeg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid #40c9a2;
+    padding: 32px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.bt{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: auto;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    position:center;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+    justify-content: center;
+}   
+.icons {
+    margin-left: 525px;
+    color: rgb(254, 254, 254);
+}
+
+i {
+    text-shadow: 2px 4px 6px rgb(1, 0, 0);
+}
+
+.fa {
+    font-size: 50px;
+}
+
+.icons a i {
+    color: white;
+    margin-right: 10px;
+}
+.services1-container .box1
+{
+    border: 2px soild black;
+    background: rgb(240, 152, 166);
+    margin-bottom: 10px;
+    width: 750px;
+    color: white;
+    margin-left: 25%;
+    border-radius: 3px;
+    padding: 20px;
+
+}
+#top {
+    position: left;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: rgb(207, 69, 69);
+    box-shadow: rgba(0, 0, 0, 0.25);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+#top:active {
+    background: #cc2333;
+}
+.services1-container .our
+{
+    text-align: center;
+    text-decoration: none;
+    
+    
+}
+hr{
+   margin-left: 500px;
+}
+.services1-container .text1
+{
+    display: flex;
+}
+.head3{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(243, 123, 143);
+}
+.services1-container #para
+{
+    padding-left: 5px;
+}
+.img img{
+    margin: 2px;
+    padding:10px;
+    width: 200px;
+    height:200px;
+    display: flex;
+}
+.sec{
+    display: flex;
+    margin-left: 450px;
+}
+.gallery-container .par
+{
+    text-align: center;
+    text-decoration: none;
+}
+.pack{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(243, 123, 143);
+}
+.packages-container .pa
+{
+    text-align: center;
+    text-decoration: none;   
+}
+#packages-container .box2{ 
+    border: 2px solid #40c9a2;
+    padding: 32px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    justify-content: center;
+    width:200px;
+    height: 350px;
+}
+
+#packages-container.box2 img{ 
+   height: 160px;
+   margin: 2px;
+   display: block;
+}
+
+.price-tag{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.box2 .text{
+    text-align: center;
+    font-size: 15px;
+    color: black;   
+}
+.sap{
+    display: flex;
+    margin-left: 200px;
+}
+.bttn{
+    padding: 6px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 12px;
+    font-size: 8px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
